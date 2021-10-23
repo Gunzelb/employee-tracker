@@ -1,4 +1,4 @@
-const { getDepartments, getRoles, getEmployees } = require("./get");
+const { getDepartments, getRoles, getEmployees } = require("./getRequests");
 
 const mainMenu = [
   "View all Employees",

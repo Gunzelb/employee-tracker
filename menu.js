@@ -1,12 +1,12 @@
 const db = require("./config/connection");
 const inquirer = require("inquirer");
 const { prompts, addEmployee, addRole, addDepartment } = require("./prompts");
-const { getDepartments, getRoles, getEmployees } = require("./get");
+const { getDepartments, getRoles, getEmployees } = require("./getRequests");
 const {
   viewEmployees,
   viewRoles,
   viewEmployeesByDepartment,
-} = require("./view");
+} = require("./viewRequests");
 
 const menu = async () => {
   const res = await inquirer.prompt(prompts);
