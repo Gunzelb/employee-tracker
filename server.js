@@ -8,6 +8,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 const start = async () => {
+  let check = menu();
+  console.log(check);
   if (await menu()) {
     start();
   } else {
