@@ -22,8 +22,7 @@ const getRoles = async () => {
   const roles = await new Promise((res, req) => {
     db.query("SELECT title FROM role", (err, results) => {
       if (err) {
-        console.log(err);
-        return;
+        req(err);
       } else {
         return res(results);
       }
